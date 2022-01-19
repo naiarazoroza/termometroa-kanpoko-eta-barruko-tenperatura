@@ -13,4 +13,7 @@ radio.setGroup(4)
 basic.forever(function () {
     tenplnt = input.temperature()
     tenplnt = tenplnt + 1
+    if (tenplnt > 30) {
+        basic.showIcon(IconNames.Sad)
+    }
 })
